@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-supreme: 'Supreme';
+  --font-switzer: 'Switzer';
+}
+
+
+@font-face {
+  font-family: 'Supreme';
+  src: url("/assets/fonts/supreme/WEB/fonts/Supreme-Regular.woff2") format('woff2'),
+      url("/assets/fonts/supreme/WEB/fonts/Supreme-Regular.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url("/assets/fonts/switzer/WEB/fonts/Switzer-Black.woff2") format('woff2'),
+      url("/assets/fonts/switzer/WEB/fonts/Switzer-Black.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --black: #000;
+  --white: #f9f9f9;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 50px;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Supreme';
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+h1 {
+  font-family: 'Switzer';
+}
+
