@@ -80,3 +80,12 @@ h1 {
   font-family: 'Switzer';
 }
 
+/* Fade/Blurred Edges Effect */
+.fade-edges {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.scrolling-text, .scrolling-text-copy {
+    transition: transform 0.15s ease-out;
+}
