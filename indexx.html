@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abigail Inuwa|| Frontend Developer</title>
+    <title>Abigail Inuwa|Frontend Developer</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -77,8 +77,8 @@
                 <p class="text-[#acacac] text-sm">based in ibadan, Nigeria</p>
                 <h1 class="text-wrap uppercase mt-3 text-8xl p-0">Abigail Inuwa</h1>
                 <div class="flex justify-end w-full">
-                    <div class="border border-fuchsia-600 rounded-lg text-[10px] uppercase mt-20 flex flex-row py-1 px-2 gap-2 items-center w-fit">
-                        <p>selected work</p>
+                    <div class="border border-fuchsia-600 rounded-lg text-[10px] uppercase mt-20 flex flex-row py-1 px-2 gap-2 items-center w-fit hover:bg-fuchsia-800 transition-all duration-300 ease-in-out">
+                        <a href="#featured-work"><p>selected work</p></a>
                         <span class="inline-block" style="transform: rotate(-45deg);">
                             <i class="fa-solid fa-arrow-down fa-jello"></i>
                         </span>
@@ -87,18 +87,91 @@
             </div>
         </div>
         <!-- SLIDING CAROUSEL -->
-        <div class="my-10 w-full fade-edges">
-            <div class="container relative w-full overflow-hidden" data-direction="left" speed="1.5">
+        <div class="my-14 w-full fade-edges">
+            <div class="container relative w-full overflow-hidden mt-10" data-direction="left" speed="2">
                 <div class="scrolling-text inline-block will-change-transform whitespace-nowrap">
-                    <h1 class="scrolling-text-content text-9xl whitespace-nowrap inline-block mr-10">Web development</h1>
+                    <h1 class="scrolling-text-content text-9xl whitespace-nowrap inline-block mr-10 pt-10">Web development</h1>
                 </div>
             </div>
-            <div class="container relative w-full overflow-hidden mt-2 text-right" data-direction="right" speed="1.5">
+            <div class="container relative w-full overflow-hidden mt-10 text-right" data-direction="right" speed="2">
                 <div class="scrolling-text inline-block will-change-transform whitespace-nowrap">
-                    <h1 class="scrolling-text-content text-9xl whitespace-nowrap inline-block mr-10">UI & Systems</h1>
+                    <h1 class="scrolling-text-content text-9xl whitespace-nowrap inline-block mr-10 pt-10">UI & Systems</h1>
                 </div>
             </div>
         </div>
+        <!-- ABOUT -->
+        <div class="my-10 flex flex-row w-full justify-between gap-1">
+            <div class="w-[50%] flex flex-col pr-2">
+                <h1 class="uppercase text-7xl my-4">About Me</h1>
+                <p class="text-[#acacac]">Hi there! <br> I'm a front-end developer with a BSc in Psychology. I work with JavaScript, React, and other frameworks to build applications that are not only functional and scalable, but also intuitive.</p>
+                <div class="relative border border-fuchsia-600 rounded-lg my-4 px-4 py-2 text-sm text-[#acacac]">
+                    <!-- diagonal star -->
+                    <span class="absolute -top-3 -left-3 text-white text-xl animate-spin" style="animation-duration: 8s;">
+                        <i class="fa-solid fa-bahai fa-jello"></i>
+                    </span>
+                    <p>My journey from psychology to front-end development was driven by my curiosity about people and how they interact with the world. Psychology taught me to understand human behaviour, while front-end development lets me apply that perspective to building engaging digital experiences. For me, it's about understanding people and creating what meets their needs.</p>
+                    <span class="absolute -bottom-3 -right-3 text-white text-xl animate-spin" style="animation-duration: 8s;">
+                        <i class="fa-solid fa-bahai fa-jello"></i>
+                    </span>
+                </div>
+                <div class="text-[#acacac] mt-4">
+                    <p>My life beyond coding is full of discoveries. I spend my freetime reading books, watching movies and trying new food. Just as in my professional life, I value learning, intergrity and having new experiences.</p>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="grid grid-cols-2 grid-rows-4 gap-4 p-4">
+                    <!-- Row 1, Column 1 -->
+                    <div class="border border-fuchsia-600 rounded-lg p-3">
+                        <h1 class="text-[#acacac] text-4xl uppercase">Frontend</h1>
+                    </div>
+                    <!-- Row 1, Column 2 -->
+                    <div class="p-3">
+                        <p class="text-[#acacac]">JS, React, TailwindCSS, TypeScript</p>
+                    </div>
+                    <!-- Row 1, Column 1 -->
+                    <div class="border p-3 border-fuchsia-600 rounded-lg">
+                        <h1 class="text-[#acacac] text-4xl uppercase">Database</h1>
+                    </div>
+                    <!-- Row 1, Column 2 -->
+                    <div class="p-3">
+                        <p class="text-[#acacac]">Supabase, MongoDb</p>
+                    </div>
+                                        <!-- Row 1, Column 1 -->
+                    <div class="border  border-fuchsia-600 rounded-lg p-3">
+                        <h1 class="text-[#acacac] text-4xl uppercase">Tools</h1>
+                    </div>
+                    <!-- Row 1, Column 2 -->
+                    <div class="p-3">
+                        <p class="text-[#acacac]">Git</p>
+                    </div>
+                                        <!-- Row 1, Column 1 -->
+                    <div class="border border-fuchsia-600 rounded-lg  p-3">
+                        <h1 class="text-[#acacac] text-4xl uppercase">Design</h1>
+                    </div>
+                    <!-- Row 1, Column 2 -->
+                    <div class="p-3">
+                        <p class="text-[#acacac]">Framer, Figma</p>
+                    </div>
+                </div>
+                <div class="flex flex-col my-4 justify-center items-center w-full">
+                    <button class="border border-fuchsia-600 rounded-lg bg-transparent text-[10px] uppercase flex flex-row py-2 px-2 gap-2 items-center justify-center w-48 cursor-pointer hover:bg-fuchsia-800 transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-105">
+                        <p>View CV</p>
+                        <span class="inline-block" style="transform: rotate(-45deg);">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </span>
+                    </button>
+                    <div class="border border-fuchsia-600 bg-fuchsia-800 rounded-lg text-[10px] uppercase flex flex-row py-2 px-2 mt-3 gap-2 items-center justify-center cursor-pointer w-48 hover:bg-transparent transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-105">
+                        <p>download cv</p>
+                        <span class="inline-block" style="transform: rotate(-45deg);">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- FEATURED WORK SECTION -->
+            <div class="featured-work">
+
+            </div>
         <!-- time pill -->
         <div class="fixed bg-fuchsia-500/50 backdrop-blur-sm rounded-lg backdrop-filter py-2 px-3 z-50 left-[90%] bottom-6">
             <p class="text-[14px] font-extralight">FRI 10:17 P.M</p>
