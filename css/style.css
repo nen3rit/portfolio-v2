@@ -89,3 +89,37 @@ h1 {
 .scrolling-text, .scrolling-text-copy {
     transition: transform 0.15s ease-out;
 }
+
+.fade-top {
+  mask-image: linear-gradient(to top, transparent, black 10%, black 90%, transparent );
+  -webkit-mask-image: linear-gradient(to top, transparent, black 10%, black 90%, transparent);
+}
+
+@keyframes marquee-left {
+      0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+@keyframes marquee-right {
+      0% {
+        transform: translate(-100%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+.animate-marquee-left {
+      animation: marquee-left 30s linear infinite;
+}
+
+.animate-marquee-right {
+      animation: marquee-right 30s linear infinite;
+}

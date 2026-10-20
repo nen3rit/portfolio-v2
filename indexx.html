@@ -10,7 +10,7 @@
 <body>
     <header class="w-full">
         <!-- nav section -->
-        <nav class="w-full flex flex-row justify-between z-50 backdrop-blur-md backdrop-filter">
+        <nav class="w-full flex flex-row justify-between z-50 backdrop-blur-md backdrop-filter my-4">
             <div class="flex flex-row items-center">
                 <p class="text-[#acacac] text-base cursor-pointer"><a href="indexx.html">DevByAbbie</a></p>
             </div>
@@ -21,7 +21,9 @@
                 </div>
                 <div class="border flex flex-row items-center border-fuchsia-700 mx-4 rounded-lg px-1 hover:bg-fuchsia-700 transition duration-300 cursor-pointer">
                     <i class="fa-brands fa-github m-0.5 text-base"></i>
-                    <p class="text-xs px-1 uppercase font-semibold">check repo</p>
+                    <a href="https://github.com/nen3rit/portfolio-v2" target="_blank" rel="noopener noreferrer">
+                        <p class="text-xs px-1 uppercase font-semibold">check repo</p>
+                    </a>
                 </div>
                 <div class="border border-fuchsia-700 mx-4 rounded-lg text-center hover:bg-fuchsia-700 transition duration-300">
                     <i class="fa-regular fa-sun hover:fa-jello fa-xs m-1 text-lg px-auto"></i>
@@ -168,10 +170,166 @@
                     </div>
                 </div>
             </div>
-            <!-- FEATURED WORK SECTION -->
-            <div class="featured-work">
+        </div>
+        <!-- FEATURED WORK SECTION -->
+        <div class="h-screen flex flex-row overflow-hidden my-10 pt-10 w-full" id="featured-work">
+            <div class="flex flex-col justify-start w-[40%]">
+                <h1 class="text-7xl uppercase leading-0">Featured Projects</h1>
+                <p class="text-left my-7 w-[80%] text-[#acacac]">A little collection of things I've built and problems I've enjoyed solving. Each project gave me a chance to experiment, learn something new, and create thoughtful experiences for the web.</p>
 
+                <button class="border border-fuchsia-600 bg-fuchsia-800 rounded-lg text-[10px] uppercase flex flex-row py-2 px-2 mt-3 gap-2 items-center justify-center cursor-pointer w-48 hover:bg-transparent transition-all duration-300 ease-in-out"><a href="projects.html"> view all</a></button>
             </div>
+                <!-- scrollable side -->
+            <div class="flex flex-col py-16 overflow-y-auto h-full gap-12 w-[50%] mx-auto scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] fade-top">
+                <div class="group/card relative h-96 w-full rounded-2xl overflow-hidden cursor-pointer shadow-xl shrink-0">
+                    <div class="relative h-full w-full origin-center transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none group-hover/card:scale-[1.03] motion-reduce:group-hover/card:scale-100">
+                        <img src="/assets/imgs/laptop-mockup.webp" alt="" class="w-full h-full object-cover object-center absolute inset-0 rounded-xl">
+                    </div>
+                    <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-medium text-lg uppercase"><h1>Dafa</h1></span>
+                    </div>
+                </div>
+                <div class="group/card relative h-96 w-full rounded-2xl overflow-hidden cursor-pointer shadow-xl shrink-0">
+                    <div class="relative h-full w-full origin-center transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none group-hover/card:scale-[1.03] motion-reduce:group-hover/card:scale-100">
+                        <img src="/assets/imgs/laptop-mockup.webp" alt="" class="w-full h-full object-cover object-center absolute inset-0 rounded-xl">
+                    </div>
+                    <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-medium text-lg uppercase"><h1>Dafa</h1></span>
+                    </div>
+                </div>
+                <div class="group/card relative h-96 w-full rounded-2xl overflow-hidden cursor-pointer shadow-xl shrink-0">
+                    <div class="relative h-full w-full origin-center transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none group-hover/card:scale-[1.03] motion-reduce:group-hover/card:scale-100">
+                        <img src="/assets/imgs/laptop-mockup.webp" alt="" class="w-full h-full object-cover object-center absolute inset-0 rounded-xl">
+                    </div>
+                    <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-medium text-lg uppercase"><h1>Dafa</h1></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- infinite marque -->
+        <div class="mt-20 mb-10 pt-8 flex fade-edges flex-col w-full overflow-hidden select-none">
+        <!-- first div -->
+            <div class="flex flex-row w-max whitespace-nowrap overflow-hidden text-[#acacac]  py-4 hover:text-fuchsia-700 transition-colors duration-300">
+                <div class="flex items-center shrink-0 animate-marquee-left">
+                    <h1 class="text-6xl italic uppercase">HTML5</h1>
+                    <i class="fa-solid fa-circle-dot mx-2"></i>
+                    <h1 class="text-6xl italic uppercase">css3</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">mongodb</h1>
+                    <i class="fa-solid fa-circle-dot mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">tailwindcss</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">framer</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">js</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">react</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">typescript</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">git</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">figma</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                </div>
+                <div class="flex items-center shrink-0 animate-marquee-left">
+                    <h1 class="text-6xl italic uppercase">HTML5</h1>
+                    <i class="fa-solid fa-circle-dot mx-2"></i>
+                    <h1 class="text-6xl italic uppercase">css3</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">mongodb</h1>
+                    <i class="fa-solid fa-circle-dot mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">tailwindcss</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">framer</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">js</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">react</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">typescript</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">git</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">figma</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                </div>
+            </div>
+            <!-- second div -->
+            <div class="flex flex-row w-max whitespace-nowrap overflow-hidden text-[#acacac]  py-4 hover:text-fuchsia-700 transition-colors duration-300">
+                <div class="flex items-center shrink-0 animate-marquee-right">
+                    <h1 class="text-6xl italic uppercase">react</h1>
+                    <i class="fa-solid fa-circle-dot mx-2"></i>
+                    <h1 class="text-6xl italic uppercase">html5</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">css3</h1>
+                    <i class="fa-solid fa-circle-dot mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">mongodb</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">framer</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">typescript</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">tailwindcss</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">js</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">figma</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">git</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                </div>
+                <div class="flex items-center shrink-0 animate-marquee-right">
+                    <h1 class="text-6xl italic uppercase">tailwindcss</h1>
+                    <i class="fa-solid fa-circle-dot mx-2"></i>
+                    <h1 class="text-6xl italic uppercase">css3</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">mongodb</h1>
+                    <i class="fa-solid fa-circle-dot mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">html5</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">react</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">js</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">framer</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">figma</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">git</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                    <h1 class="text-6xl italic  uppercase">typescript</h1>
+                    <i class="fa-solid fa-circle-dot  mx-2"></i>
+                </div>
+            </div>
+        </div>
+        <!-- marquee ends -->
+        <!-- contact area -->
+        <div class="flex flex-row border my-10 py-20">
+            <div class="flex flex-col">
+                <h1>Let's work together</h1>
+                <p>Have a project in mind? Looking for a partner to help build your next big idea? I'm always open to discussing new opportunities and challenges.</p>
+                <div class="flex flex-row">
+                    <div><i class="fa-brands fa-github"></i></div>
+                    <div><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="border-b-2 bg-fuchsia-700"></div>
+                <div class="flex flex-row justify-between">
+                    <i class="fa-regular fa-envelope"></i>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+                <p>Send me a message</p>
+                <h1>abinenrit38@gmail.com</h1>
+                <div class="flex flex-row">
+                    <i class="fa-regular fa-clone"></i>
+                    <p>copy address</p>
+                </div>
+            </div>
+        </div>
         <!-- time pill -->
         <div class="fixed bg-fuchsia-500/50 backdrop-blur-sm rounded-lg backdrop-filter py-2 px-3 z-50 left-[90%] bottom-6">
             <p class="text-[14px] font-extralight">FRI 10:17 P.M</p>
