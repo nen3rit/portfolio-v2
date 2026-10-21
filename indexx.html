@@ -208,7 +208,7 @@
             </div>
         </div>
         <!-- infinite marque -->
-        <div class="mt-20 mb-10 pt-8 flex fade-edges flex-col w-full overflow-hidden select-none">
+        <div class="pt-56 flex fade-edges flex-col w-full overflow-hidden select-none h-screen my-auto">
         <!-- first div -->
             <div class="flex flex-row w-max whitespace-nowrap overflow-hidden text-[#acacac]  py-4 hover:text-fuchsia-700 transition-colors duration-300">
                 <div class="flex items-center shrink-0 animate-marquee-left">
@@ -306,27 +306,47 @@
         </div>
         <!-- marquee ends -->
         <!-- contact area -->
-        <div class="flex flex-row border my-10 py-20">
-            <div class="flex flex-col">
-                <h1>Let's work together</h1>
-                <p>Have a project in mind? Looking for a partner to help build your next big idea? I'm always open to discussing new opportunities and challenges.</p>
-                <div class="flex flex-row">
-                    <div><i class="fa-brands fa-github"></i></div>
-                    <div><i class="fa-brands fa-linkedin-in"></i></div>
-                    <div><i class="fa-brands fa-instagram"></i></div>
+        <div class="flex flex-row w-full h-screen gap-2">
+            <div class="flex flex-col w-[60%]">
+                <h1 class="uppercase text-9xl">Let's work</h1>
+                <h1 class="uppercase text-9xl text-fuchsia-600">Together</h1>
+                <p class="text-[#acacac] text-xl w-[70%] my-10">Have a project in mind? Looking for a partner to help build your next big idea? I'm always open to discussing new opportunities and challenges.</p>
+                <div class="flex flex-row justify-start py-2 items-end">
+                    <div class="border text-xl text-[#acacac] rounded-2xl p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div class="border text-xl text-[#acacac] rounded-2xl mx-4 p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="border text-xl text-[#acacac] rounded-2xl p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300"><i class="fa-brands fa-github"></i></div>
                 </div>
             </div>
-            <div class="flex flex-col">
-                <div class="border-b-2 bg-fuchsia-700"></div>
-                <div class="flex flex-row justify-between">
-                    <i class="fa-regular fa-envelope"></i>
-                    <i class="fa-solid fa-arrow-right-long"></i>
+            <div class="group flex flex-col w-[40%] h-auto transition-all duration-500 ease-in-out hover:-translate-y-0.5 hover:scale-105 cursor-pointer">
+                <div class="group-hover:border-b-fuchsia-700 border-b-zinc-700 border-b h-[20%] transition-colors duration-300"></div>
+                <div class="flex flex-row justify-between my-10 py-2">
+                    <i class="fa-regular fa-envelope text-2xl text-zinc-400 group-hover:text-fuchsia-600 transition-colors duration-300"></i>
+                    <div class="mr-4">
+                        <i class="fa-solid fa-arrow-right-long text-2xl text-zinc-400 group-hover:text-fuchsia-600 transition-all duration-300 group-hover:-rotate-45"></i>
+                    </div>
                 </div>
-                <p>Send me a message</p>
-                <h1>abinenrit38@gmail.com</h1>
-                <div class="flex flex-row">
-                    <i class="fa-regular fa-clone"></i>
-                    <p>copy address</p>
+                <div class="mt-40">
+                    <p class="py-2 uppercase text-xs text-zinc-400">Send me a message</p>
+                    <h1 class="uppercase text-2xl/tight">abinenrit38</h1>
+                    <h1 class="uppercase text-2xl/tight text-zinc-400 leading-0 p-0 m-0">@gmail.com</h1>
+                    <div class="flex flex-row text-zinc-400 my-8 group group-hover:text-white transition-colors duration-300">
+                        <i class="fa-regular fa-clone"></i>
+                        <p class="mx-2 uppercase text-zinc-400 text-sm group-hover:underline group-hover:text-white transition-colors duration-300">Send me a message</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border my-10 py-4">
+            <p class="uppercase tracking-widest text-xs text-zinc-400">navigation</p>
+            <div class="border flex flex-row justify-between">
+                <div class="flex flex-col">
+                    <a href="#about" class="uppercase text-2xl text-zinc-400 hover:text-white transition-colors duration-300"><h1>about</h1></a>
+                    <a href="#featured-work" class="uppercase text-2xl text-zinc-400 hover:text-white transition-colors duration-300"><h1>work</h1></a>
+                    <a href="#contact" class="uppercase text-2xl text-zinc-400 hover:text-white transition-colors duration-300"><h1>contact</h1></a>
+                </div> 
+                <div class="flex flex-col">
+                    <div></div>
+                    <a href=""><p class="uppercase tracking-widest text-[10px] text-zinc-400">back to top</p></a>
                 </div>
             </div>
         </div>
@@ -335,6 +355,11 @@
             <p class="text-[14px] font-extralight">FRI 10:17 P.M</p>
         </div>
     </main>
+    <footer class="flex flex-row my-10 ">
+        <div><p>2026 Abigail Inuwa </p></div>
+        <div class="flex flex-row">
+        </div>
+    </footer>
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
