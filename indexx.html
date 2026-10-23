@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="no-scrollbar">
-    <header class="w-full" id="header">
+    <header class="relative w-full z-30" id="header">
         <!-- nav section -->
-        <nav class="w-full flex flex-row justify-between z-50 backdrop-blur-md backdrop-filter my-4">
+        <nav class="w-full flex flex-row justify-between z-30 backdrop-blur-md backdrop-filter my-4">
             <div class="flex flex-row items-center">
                 <p class="text-[#acacac] text-base cursor-pointer"><a href="indexx.html">DevByAbbie</a></p>
             </div>
@@ -28,12 +28,27 @@
                 <div class="border border-fuchsia-700 mx-4 rounded-lg text-center hover:bg-fuchsia-700 transition duration-300">
                     <i class="fa-regular fa-sun hover:fa-jello fa-xs m-1 text-lg px-auto"></i>
                 </div>
-                <div class="rounded-lg text-center">
-                    <i class="fa-solid fa-bars m-1 text-2xl"></i>
+                <div  class="flex flex-row cursor-pointer z-50">
+                    <div class="rounded-lg text-center" aria-label="Toggle menu" id="menu-toggle-btn">
+                        <i class="fa-solid fa-bars m-1 text-2xl transition-transform duration-300" id="hamburger-icon"></i>
+                        <i id="close-icon" class="fa-solid fa-xmark text-2xl hidden transition-transform duration-300"></i>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- modal section -->
+    <section id="mobile-menu" class="fixed inset-0 bg-black backdrop-blur-md flex flex-col items-center justify-center opacity-0 pointer-events-none transition-all duration-300 h-screen z-50">
+        <button id="modal-close-btn" class="absolute top-6 right-6 text-white text-3xl p-2 cursor-pointer z-50" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <nav class="flex flex-col items-center gap-8 text-center">
+            <a href="#about" class="menu-link"><h1 class="uppercase text-6xl text-white underline">About</h1></a>
+            <a href="#featured-work" class="menu-link"><h1 class="uppercase text-6xl text-zinc-400 hover:text-white transition-colors duration-300">projects</h1></a>
+            <a href="#contact" class="menu-link"><h1 class="uppercase text-6xl text-zinc-400 hover:text-white transition-colors duration-300">contact</h1></a>
+        </nav>
+
+    </section>
     <main>
         <div class="flex flex-row justify-between my-10">
             <div class="w-[48%] block">
@@ -89,7 +104,7 @@
             </div>
         </div>
         <!-- SLIDING CAROUSEL -->
-        <div class="my-14 w-full fade-edges">
+        <section class="my-14 w-full fade-edges">
             <div class="container relative w-full overflow-hidden mt-10" data-direction="left" speed="2">
                 <div class="scrolling-text inline-block will-change-transform whitespace-nowrap">
                     <h1 class="scrolling-text-content text-9xl whitespace-nowrap inline-block mr-10 pt-10">Web development</h1>
@@ -100,9 +115,9 @@
                     <h1 class="scrolling-text-content text-9xl whitespace-nowrap inline-block mr-10 pt-10">UI & Systems</h1>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- ABOUT -->
-        <div class="mt-24 mb-10 flex flex-row w-full justify-between gap-1" id="about">
+        <section class="mt-24 mb-10 flex flex-row w-full justify-between gap-1 fade-sections" id="about">
             <div class="w-[50%] flex flex-col pr-2">
                 <h1 class="uppercase text-7xl my-4">About Me</h1>
                 <p class="text-[#acacac]">Hi there! <br> I'm a front-end developer with a BSc in Psychology. I work with JavaScript, React, and other frameworks to build applications that are not only functional and scalable, but also intuitive.</p>
@@ -170,9 +185,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- FEATURED WORK SECTION -->
-        <div class="h-screen flex flex-row overflow-hidden mt-24 mb-16 pt-10 w-full" id="featured-work">
+        <section class="h-screen flex flex-row overflow-hidden mt-24 mb-16 pt-10 w-full fade-sections" id="featured-work">
             <div class="flex flex-col justify-start w-[40%]">
                 <h1 class="text-7xl uppercase leading-0">Featured Projects</h1>
                 <p class="text-left my-7 w-[80%] text-[#acacac]">A little collection of things I've built and problems I've enjoyed solving. Each project gave me a chance to experiment, learn something new, and create thoughtful experiences for the web.</p>
@@ -206,7 +221,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- infinite marque -->
         <div class="pt-56 flex fade-edges flex-col w-full overflow-hidden select-none h-screen my-auto">
         <!-- first div -->
@@ -306,7 +321,7 @@
         </div>
         <!-- marquee ends -->
         <!-- contact area -->
-        <div class="flex flex-row w-full h-screen gap-2" id="contact">
+        <div class="flex flex-row w-full h-screen gap-2 fade-sections" id="contact">
             <div class="flex flex-col w-[60%]">
                 <h1 class="uppercase text-9xl">Let's work</h1>
                 <h1 class="uppercase text-9xl text-fuchsia-600">Together</h1>
@@ -340,7 +355,7 @@
         <div class="mt-32 -mx-10">
             <div class="w-full h-px bg-fuchsia-800"></div>
         </div>
-        <div class="my-20 py-10 border-b border-b-fuchsia-800">
+        <div class="my-20 py-10 border-b border-b-fuchsia-800 fade-sections">
             <p class="uppercase tracking-widest text-xs text-zinc-400">navigation</p>
             <div class="flex flex-row justify-between my-4">
                 <div class="flex flex-col">

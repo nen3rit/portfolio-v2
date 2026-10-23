@@ -61,3 +61,75 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// fade sections
+document.addEventListener("DOMContentLoaded", function () {
+const observerOptions = {
+    root: null, // uses the browser viewport
+    rootMargin: '0px',
+    threshold: 0.15 // Triggers when 15% of the section is visible
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        // Optional: stop observing once it has faded in so it doesn't fade out again when scrolling back up
+        observer.unobserve(entry.target);
+    }
+    });
+}, observerOptions);
+
+  // Target all sections with the fade-section class
+document.querySelectorAll('.fade-sections').forEach(section => {
+    observer.observe(section);
+});
+});
+
+// modal menu
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-toggle-btn");
+    const modalCloseBtn = document.getElementById("modal-close-btn")
+    const mobileMenu = document.getElementById("mobile-menu");
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    const closeIcon = document.getElementById("close-icon");
+    const menuLinks = document.querySelectorAll(".menu-link");
+
+function openMenu() {
+    mobileMenu.classList.remove("opacity-0", "pointer-events-none");
+    document.body.classList.add("overflow-hidden");
+    hamburgerIcon.classList.add("hidden"); // Hide hamburger in nav when open
+    closeIcon.classList.remove("hidden");
+}
+
+function closeMenu() {
+    mobileMenu.classList.add("opacity-0", "pointer-events-none");
+    document.body.classList.remove("overflow-hidden");
+    hamburgerIcon.classList.remove("hidden"); // Bring hamburger back
+    closeIcon.classList.add("hidden");
+}
+
+  // Event Listeners
+if (menuBtn) menuBtn.addEventListener("click", openMenu);
+if (modalCloseBtn) modalCloseBtn.addEventListener("click", closeMenu);
+
+  // Close menu automatically when any nav link inside the modal is clicked
+menuLinks.forEach(link => {
+    link.addEventListener("click", (e) =>{
+        closeMenu();
+
+        const targetId = link.getAttribute("href");
+        if (targetId && targetId.startsWith("#")){
+            e.preventDefault();
+            setTimeout(() => {
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({behavior : "smooth"})
+                }
+            }, 50)
+        }
+    })
+}
+
+)}
+)
