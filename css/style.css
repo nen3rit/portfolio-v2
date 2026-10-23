@@ -123,3 +123,13 @@ h1 {
 .animate-marquee-right {
       animation: marquee-right 30s linear infinite;
 }
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar{
+    display: none;
+  }
+  .no-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-scrollbar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abigail Inuwa|Frontend Developer</title>
+    <title>Abigail Inuwa | Frontend Developer</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="w-full">
+<body class="no-scrollbar">
+    <header class="w-full" id="header">
         <!-- nav section -->
         <nav class="w-full flex flex-row justify-between z-50 backdrop-blur-md backdrop-filter my-4">
             <div class="flex flex-row items-center">
@@ -35,7 +35,7 @@
         </nav>
     </header>
     <main>
-        <div class="flex flex-row justify-between my-6">
+        <div class="flex flex-row justify-between my-10">
             <div class="w-[48%] block">
                 <h1 class="font-switzer text-7xl text-wrap uppercase my-2">Frontend Developer</h1>
                 <div class="flex flex-row justify-start my-4">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-row justify-between mt-24 mb-16">
             <div class="w-[60%]">
                 <div class="border border-fuchsia-600 ">
                     <img src="/assets/imgs/WhatsApp Image 2026-10-16 at 21.52.19.jpeg" class="w-full h-[302px]" alt="">
@@ -102,7 +102,7 @@
             </div>
         </div>
         <!-- ABOUT -->
-        <div class="my-10 flex flex-row w-full justify-between gap-1">
+        <div class="mt-24 mb-10 flex flex-row w-full justify-between gap-1" id="about">
             <div class="w-[50%] flex flex-col pr-2">
                 <h1 class="uppercase text-7xl my-4">About Me</h1>
                 <p class="text-[#acacac]">Hi there! <br> I'm a front-end developer with a BSc in Psychology. I work with JavaScript, React, and other frameworks to build applications that are not only functional and scalable, but also intuitive.</p>
@@ -172,7 +172,7 @@
             </div>
         </div>
         <!-- FEATURED WORK SECTION -->
-        <div class="h-screen flex flex-row overflow-hidden my-10 pt-10 w-full" id="featured-work">
+        <div class="h-screen flex flex-row overflow-hidden mt-24 mb-16 pt-10 w-full" id="featured-work">
             <div class="flex flex-col justify-start w-[40%]">
                 <h1 class="text-7xl uppercase leading-0">Featured Projects</h1>
                 <p class="text-left my-7 w-[80%] text-[#acacac]">A little collection of things I've built and problems I've enjoyed solving. Each project gave me a chance to experiment, learn something new, and create thoughtful experiences for the web.</p>
@@ -306,15 +306,15 @@
         </div>
         <!-- marquee ends -->
         <!-- contact area -->
-        <div class="flex flex-row w-full h-screen gap-2">
+        <div class="flex flex-row w-full h-screen gap-2" id="contact">
             <div class="flex flex-col w-[60%]">
                 <h1 class="uppercase text-9xl">Let's work</h1>
                 <h1 class="uppercase text-9xl text-fuchsia-600">Together</h1>
                 <p class="text-[#acacac] text-xl w-[70%] my-10">Have a project in mind? Looking for a partner to help build your next big idea? I'm always open to discussing new opportunities and challenges.</p>
                 <div class="flex flex-row justify-start py-2 items-end">
-                    <div class="border text-xl text-[#acacac] rounded-2xl p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300"><i class="fa-brands fa-linkedin-in"></i></div>
-                    <div class="border text-xl text-[#acacac] rounded-2xl mx-4 p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300"><i class="fa-brands fa-instagram"></i></div>
-                    <div class="border text-xl text-[#acacac] rounded-2xl p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300"><i class="fa-brands fa-github"></i></div>
+                    <div class="border text-xl text-[#acacac] rounded-3xl p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div class="border text-xl text-[#acacac] rounded-3xl mx-4 p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="border text-xl text-[#acacac] rounded-3xl p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300"><i class="fa-brands fa-github"></i></div>
                 </div>
             </div>
             <div class="group flex flex-col w-[40%] h-auto transition-all duration-500 ease-in-out hover:-translate-y-0.5 hover:scale-105 cursor-pointer">
@@ -336,17 +336,21 @@
                 </div>
             </div>
         </div>
-        <div class="border my-10 py-4">
+        <!-- divider -->
+        <div class="mt-32 -mx-10">
+            <div class="w-full h-px bg-fuchsia-800"></div>
+        </div>
+        <div class="my-20 py-10 border-b border-b-fuchsia-800">
             <p class="uppercase tracking-widest text-xs text-zinc-400">navigation</p>
-            <div class="border flex flex-row justify-between">
+            <div class="flex flex-row justify-between my-4">
                 <div class="flex flex-col">
-                    <a href="#about" class="uppercase text-2xl text-zinc-400 hover:text-white transition-colors duration-300"><h1>about</h1></a>
-                    <a href="#featured-work" class="uppercase text-2xl text-zinc-400 hover:text-white transition-colors duration-300"><h1>work</h1></a>
-                    <a href="#contact" class="uppercase text-2xl text-zinc-400 hover:text-white transition-colors duration-300"><h1>contact</h1></a>
+                    <a href="#about" class="uppercase text-2xl text-zinc-400 hover:text-white transition-colors duration-300 py-1"><h1>about</h1></a>
+                    <a href="#featured-work" class="uppercase text-2xl text-zinc-400 hover:text-white transition-colors duration-300 py-1"><h1>work</h1></a>
+                    <a href="#contact" class="uppercase text-2xl text-zinc-400 hover:text-white transition-colors duration-300 py-1"><h1>contact</h1></a>
                 </div> 
-                <div class="flex flex-col">
-                    <div></div>
-                    <a href=""><p class="uppercase tracking-widest text-[10px] text-zinc-400">back to top</p></a>
+                <div class="group flex flex-col justify-end items-center group-hover:text-white">
+                    <div class="border text-sm text-[#acacac] rounded-full p-2 group-hover:text-white group-hover:bg-fuchsia-700 group-hover:border-fuchsia-600 transition-colors duration-300 w-fit my-1"><a href="#header"><i class="fa-solid fa-arrow-up-long"></i></a></div>
+                    <a href="#header"><p class="uppercase tracking-widest text-[10px] my-2 text-zinc-400 group-hover:text-white transition-colors duration-300 ">back to top</p></a>
                 </div>
             </div>
         </div>
@@ -355,9 +359,21 @@
             <p class="text-[14px] font-extralight">FRI 10:17 P.M</p>
         </div>
     </main>
-    <footer class="flex flex-row my-10 ">
-        <div><p>2026 Abigail Inuwa </p></div>
-        <div class="flex flex-row">
+    <footer class="flex flex-row my-10 justify-between items-end">
+        <div><p class="uppercase tracking-widest text-xs text-zinc-400"> ©2026 Abigail Inuwa </p></div>
+        <div class="flex flex-row py-2 items-end justify-evenly">
+            <div class="border text-xs text-[#acacac] rounded-3xl p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="border text-xs text-[#acacac] rounded-3xl p-2 mx-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="border text-xs text-[#acacac] rounded-3xl p-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="border text-xs text-[#acacac] rounded-3xl p-2 ml-2 hover:text-white hover:bg-fuchsia-700 hover:border-fuchsia-600 transition-colors duration-300">
+                <i class="fa-brands fa-github"></i>
+            </div>
         </div>
     </footer>
 
