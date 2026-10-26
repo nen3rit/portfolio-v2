@@ -6,6 +6,7 @@
     <title>Abigail Inuwa | Frontend Developer</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header class="relative w-full z-30" id="header">
@@ -186,40 +187,40 @@
             </div>
         </section>
         <!-- FEATURED WORK SECTION -->
-        <section class="h-screen flex flex-row overflow-hidden mt-24 mb-16 pt-10 w-full fade-sections" id="featured-work">
-            <div class="flex flex-col justify-start w-[40%]">
-                <h1 class="text-7xl uppercase leading-0">Featured Projects</h1>
-                <p class="text-left my-7 w-[80%] text-[#acacac]">A little collection of things I've built and problems I've enjoyed solving. Each project gave me a chance to experiment, learn something new, and create thoughtful experiences for the web.</p>
-
-                <button class="border border-fuchsia-600 bg-fuchsia-800 rounded-lg text-[10px] uppercase flex flex-row py-2 px-2 mt-3 gap-2 items-center justify-center cursor-pointer w-48 hover:bg-transparent transition-all duration-300 ease-in-out"><a href="projects.html"> view all</a></button>
-            </div>
+        <section class="h-screen relative flex flex-row overflow-hidden mt-24 w-full fade-sections" id="featured-work">
+                <!-- left section -->
+                <div class="flex flex-col justify-start w-[40%] my-10">
+                    <h1 class="text-7xl uppercase leading-0">Featured Projects</h1>
+                    <p class="text-left my-7 w-[80%] text-[#acacac]">A little collection of things I've built and problems I've enjoyed solving. Each project gave me a chance to experiment, learn something new, and create thoughtful experiences for the web.</p>
+                    <a href="projects.html"><button class="border border-fuchsia-600 bg-fuchsia-800 rounded-lg text-[10px] uppercase flex flex-row py-2 px-2 mt-3 gap-2 items-center justify-center cursor-pointer w-48 hover:bg-transparent transition-all duration-300 ease-in-out">view all</button></a>
+                </div>
                 <!-- scrollable side -->
-            <div class="flex flex-col py-16 overflow-y-auto h-full gap-12 w-[50%] mx-auto scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] fade-top">
-                <div class="group/card relative h-96 w-full rounded-2xl overflow-hidden cursor-pointer shadow-xl shrink-0">
-                    <div class="relative h-full w-full origin-center transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none group-hover/card:scale-[1.03] motion-reduce:group-hover/card:scale-100">
-                        <img src="/assets/imgs/laptop-mockup.webp" alt="" class="w-full h-full object-cover object-center absolute inset-0 rounded-xl">
+                <div class="flex flex-col py-16 overflow-y-auto h-full gap-12 w-[50%] mx-auto scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] fade-top">
+                    <div class="group/card relative h-96 w-full rounded-2xl overflow-hidden cursor-pointer shadow-xl shrink-0">
+                        <div class="relative h-full w-full origin-center transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none group-hover/card:scale-[1.03] motion-reduce:group-hover/card:scale-100">
+                            <img src="/assets/imgs/laptop-mockup.webp" alt="" class="w-full h-full object-cover object-center absolute inset-0 rounded-xl">
+                        </div>
+                        <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-white font-medium text-lg uppercase"><h1>Dafa</h1></span>
+                        </div>
                     </div>
-                    <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <span class="text-white font-medium text-lg uppercase"><h1>Dafa</h1></span>
+                    <div class="group/card relative h-96 w-full rounded-2xl overflow-hidden cursor-pointer shadow-xl shrink-0">
+                        <div class="relative h-full w-full origin-center transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none group-hover/card:scale-[1.03] motion-reduce:group-hover/card:scale-100">
+                            <img src="/assets/imgs/laptop-mockup.webp" alt="" class="w-full h-full object-cover object-center absolute inset-0 rounded-xl">
+                        </div>
+                        <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-white font-medium text-lg uppercase"><h1>Dafa</h1></span>
+                        </div>
+                    </div>
+                    <div class="group/card relative h-96 w-full rounded-2xl overflow-hidden cursor-pointer shadow-xl shrink-0">
+                        <div class="relative h-full w-full origin-center transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none group-hover/card:scale-[1.03] motion-reduce:group-hover/card:scale-100">
+                            <img src="/assets/imgs/laptop-mockup.webp" alt="" class="w-full h-full object-cover object-center absolute inset-0 rounded-xl">
+                        </div>
+                        <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <span class="text-white font-medium text-lg uppercase"><h1>Dafa</h1></span>
+                        </div>
                     </div>
                 </div>
-                <div class="group/card relative h-96 w-full rounded-2xl overflow-hidden cursor-pointer shadow-xl shrink-0">
-                    <div class="relative h-full w-full origin-center transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none group-hover/card:scale-[1.03] motion-reduce:group-hover/card:scale-100">
-                        <img src="/assets/imgs/laptop-mockup.webp" alt="" class="w-full h-full object-cover object-center absolute inset-0 rounded-xl">
-                    </div>
-                    <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <span class="text-white font-medium text-lg uppercase"><h1>Dafa</h1></span>
-                    </div>
-                </div>
-                <div class="group/card relative h-96 w-full rounded-2xl overflow-hidden cursor-pointer shadow-xl shrink-0">
-                    <div class="relative h-full w-full origin-center transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none group-hover/card:scale-[1.03] motion-reduce:group-hover/card:scale-100">
-                        <img src="/assets/imgs/laptop-mockup.webp" alt="" class="w-full h-full object-cover object-center absolute inset-0 rounded-xl">
-                    </div>
-                    <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                        <span class="text-white font-medium text-lg uppercase"><h1>Dafa</h1></span>
-                    </div>
-                </div>
-            </div>
         </section>
         <!-- infinite marque -->
         <div class="pt-56 flex fade-edges flex-col w-full overflow-hidden select-none h-screen my-auto">
@@ -392,7 +393,6 @@
     </footer>
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js" defer></script>
 </body>
 </html>

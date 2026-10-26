@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-scrollbar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abigail Inuwa | Frontend Developer</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header class="relative w-full z-30" id="header">
@@ -50,22 +51,72 @@
     </section>
 
     <!-- main body -->
-    <main class="border border-gray-300 flex flex-col">
+    <main class="flex flex-col">
         <section class="flex flex-col">
             <div class="flex flex-row justify-start items-end">
                 <p class="uppercase tracking-widest text-xs text-zinc-400">Abigail's portfolio</p>
                     <i class="fa-solid fa-minus mx-2 text-fuchsia-700"></i>
-                <a href=""><p class="uppercase tracking-widest text-xs text-zinc-400 hover:text-white transition-colors duration-300">back to home</p></a>
+                <a href="indexx.html"><p class="uppercase tracking-widest text-xs text-zinc-400 hover:text-white transition-colors duration-300">back to home</p></a>
             </div>
             <h1 class="uppercase text-6xl/tight text-white my-2">projects</h1>
             <p class="text-zinc-400"> Here are projects I have enjoyed working on. Open any card for the full case study</p>
         </section>
         <!-- grid section for the cards -->
-        <section></section>
+        <section class="grid grid-cols-3 gap-4 my-16">
+            <!-- card holder -->
+            <div class="flex flex-col my-2 group ">
+                <div class="w-full h-auto border border-fuchsia-600 rounded-lg overflow-hidden">
+                    <img src="/assets/imgs/laptop-mockup.webp" alt="#" class="h-[200px] object-cover w-full rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <p class="uppercase tracking-widest text-xs text-zinc-400 my-2">2026</p>
+                <h1 class="uppercase text-3xl/tight text-white">Dafa</h1>
+                <p class="uppercase tracking-widest text-xs text-zinc-400 my-2">[tailwind css] - [js] - [supabase]</p>
+                <p class="text-zinc-400 text-lg leading-snug"> A Nigerian recipe platform with local Nigerian dishes, an admin dashboard and searh plus filtering.</p>
+                <a href="#"><p class="uppercase tracking-widest text-[10px] text-zinc-400 hover:text-white my-2">View project details</p></a>
+            </div>
+            <!-- cardholder ends -->
+            <!-- card holder -->
+            <div class="flex flex-col my-2 group ">
+                <div class="w-full h-auto border border-fuchsia-600 rounded-lg overflow-hidden">
+                    <img src="/assets/imgs/laptop-mockup.webp" alt="#" class="h-[200px] object-cover w-full rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <p class="uppercase tracking-widest text-xs text-zinc-400 my-2">2026</p>
+                <h1 class="uppercase text-3xl/tight text-white">Dafa</h1>
+                <p class="uppercase tracking-widest text-xs text-zinc-400 my-2">[tailwind css] - [js] - [supabase]</p>
+                <p class="text-zinc-400 text-lg leading-snug"> A Nigerian recipe platform with local Nigerian dishes, an admin dashboard and searh plus filtering.</p>
+                <a href="#"><p class="uppercase tracking-widest text-[10px] text-zinc-400 hover:text-white my-2">View project details</p></a>
+            </div>
+            <!-- cardholder ends -->
+            <!-- card holder -->
+            <div class="flex flex-col my-2 group ">
+                <div class="w-full h-auto border border-fuchsia-600 rounded-lg overflow-hidden">
+                    <img src="/assets/imgs/laptop-mockup.webp" alt="#" class="h-[200px] object-cover w-full rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <p class="uppercase tracking-widest text-xs text-zinc-400 my-2">2026</p>
+                <h1 class="uppercase text-3xl/tight text-white">Dafa</h1>
+                <p class="uppercase tracking-widest text-xs text-zinc-400 my-2">[tailwind css] - [js] - [supabase]</p>
+                <p class="text-zinc-400 text-lg leading-snug"> A Nigerian recipe platform with local Nigerian dishes, an admin dashboard and searh plus filtering.</p>
+                <a href="#"><p class="uppercase tracking-widest text-[10px] text-zinc-400 hover:text-white my-2">View project details</p></a>
+            </div>
+            <!-- cardholder ends -->
+            <!-- card holder -->
+            <div class="flex flex-col my-2 group ">
+                <div class="w-full h-auto border border-fuchsia-600 rounded-lg overflow-hidden">
+                    <img src="/assets/imgs/laptop-mockup.webp" alt="#" class="h-[200px] object-cover w-full rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+                </div>
+                <p class="uppercase tracking-widest text-xs text-zinc-400 my-2">2026</p>
+                <h1 class="uppercase text-3xl/tight text-white">Dafa</h1>
+                <p class="uppercase tracking-widest text-xs text-zinc-400 my-2">[tailwind css] - [js] - [supabase]</p>
+                <p class="text-zinc-400 text-lg leading-snug"> A Nigerian recipe platform with local Nigerian dishes, an admin dashboard and searh plus filtering.</p>
+                <a href="#"><p class="uppercase tracking-widest text-[10px] text-zinc-400 hover:text-white my-2">View project details</p></a>
+            </div>
+            <!-- cardholder ends -->
+            
+
+        </section>
     </main>
 
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js" defer></script>
 </body>
 </html>
