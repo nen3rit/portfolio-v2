@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Abigail Inuwa | Frontend Developer</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <header class="relative w-full z-30" id="header">
+        <!-- nav section -->
+        <nav class="w-full flex flex-row justify-between z-30 backdrop-blur-md backdrop-filter my-4">
+            <div class="flex flex-row items-center">
+                <p class="text-[#acacac] text-base cursor-pointer"><a href="indexx.html">DevByAbbie</a></p>
+            </div>
+            <div class="flex flex-row justify-evenly items-center">
+                <div class="border flex flex-row items-center border-fuchsia-700 mx-2 rounded-lg px-1 hover:bg-fuchsia-700 transition duration-300 cursor-pointer">
+                    <i class="fa-regular fa-envelope m-0.5 text-base"></i>
+                    <p class="text-xs px-1 uppercase font-semibold">Send a message</p>
+                </div>
+                <div class="border flex flex-row items-center border-fuchsia-700 mx-4 rounded-lg px-1 hover:bg-fuchsia-700 transition duration-300 cursor-pointer">
+                    <i class="fa-brands fa-github m-0.5 text-base"></i>
+                    <a href="https://github.com/nen3rit/portfolio-v2" target="_blank" rel="noopener noreferrer">
+                        <p class="text-xs px-1 uppercase font-semibold">check repo</p>
+                    </a>
+                </div>
+                <div class="border border-fuchsia-700 mx-4 rounded-lg text-center hover:bg-fuchsia-700 transition duration-300">
+                    <i class="fa-regular fa-sun hover:fa-jello fa-xs m-1 text-lg px-auto"></i>
+                </div>
+                <div  class="flex flex-row cursor-pointer z-50">
+                    <div class="rounded-lg text-center" aria-label="Toggle menu" id="menu-toggle-btn">
+                        <i class="fa-solid fa-bars m-1 text-2xl transition-transform duration-300" id="hamburger-icon"></i>
+                        <i id="close-icon" class="fa-solid fa-xmark text-2xl hidden transition-transform duration-300"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- modal section -->
+    <section id="mobile-menu" class="fixed inset-0 bg-black backdrop-blur-md flex flex-col items-center justify-center opacity-0 pointer-events-none transition-all duration-300 h-screen z-50">
+        <button id="modal-close-btn" class="absolute top-6 right-6 text-white text-3xl p-2 cursor-pointer z-50" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <nav class="flex flex-col items-center gap-8 text-center">
+            <a href="#about" class="menu-link"><h1 class="uppercase text-6xl text-zinc-400 hover:text-white">About</h1></a>
+            <a href="#featured-work" class="menu-link"><h1 class="uppercase text-6xl underline text-white  transition-colors duration-300">projects</h1></a>
+            <a href="#contact" class="menu-link"><h1 class="uppercase text-6xl text-zinc-400 hover:text-white transition-colors duration-300">contact</h1></a>
+        </nav>
+    </section>
+
+    <!-- main body -->
+    <main class="border border-gray-300 flex flex-col">
+        <section class="flex flex-col">
+            <div class="flex flex-row justify-start items-end">
+                <p class="uppercase tracking-widest text-xs text-zinc-400">Abigail's portfolio</p>
+                    <i class="fa-solid fa-minus mx-2 text-fuchsia-700"></i>
+                <a href=""><p class="uppercase tracking-widest text-xs text-zinc-400 hover:text-white transition-colors duration-300">back to home</p></a>
+            </div>
+            <h1 class="uppercase text-6xl/tight text-white my-2">projects</h1>
+            <p class="text-zinc-400"> Here are projects I have enjoyed working on. Open any card for the full case study</p>
+        </section>
+        <!-- grid section for the cards -->
+        <section></section>
+    </main>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
