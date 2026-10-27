@@ -1,3 +1,20 @@
+// src/main.js
+import './style.css'
+
+import Lenis from 'lenis'
+import 'lenis/dist/lenis.css'
+
+const lenis = new Lenis()
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const containers = document.querySelectorAll('.container');
 
@@ -133,3 +150,9 @@ menuLinks.forEach(link => {
 
 )}
 )
+
+
+// lenis smooth scroll
+
+
+

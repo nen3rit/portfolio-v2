@@ -1,2 +1,4 @@
 # Ignore the entire font directory
 assets/fonts/
+node_modules
+dist/
