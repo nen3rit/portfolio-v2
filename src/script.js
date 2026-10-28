@@ -105,51 +105,48 @@ document.querySelectorAll('.fade-sections').forEach(section => {
 
 // modal menu
 document.addEventListener("DOMContentLoaded", () => {
-    const menuBtn = document.getElementById("menu-toggle-btn");
-    const modalCloseBtn = document.getElementById("modal-close-btn")
-    const mobileMenu = document.getElementById("mobile-menu");
-    const hamburgerIcon = document.getElementById("hamburger-icon");
-    const closeIcon = document.getElementById("close-icon");
-    const menuLinks = document.querySelectorAll(".menu-link");
+  const menuBtn = document.getElementById("menu-toggle-btn");
+  const modalCloseBtn = document.getElementById("modal-close-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const closeIcon = document.getElementById("close-icon");
+  const menuLinks = document.querySelectorAll(".menu-link");
 
-function openMenu() {
+  function openMenu() {
     mobileMenu.classList.remove("opacity-0", "pointer-events-none");
     document.body.classList.add("overflow-hidden");
-    hamburgerIcon.classList.add("hidden"); // Hide hamburger in nav when open
+    hamburgerIcon.classList.add("hidden");
     closeIcon.classList.remove("hidden");
-}
+  }
 
-function closeMenu() {
+  function closeMenu() {
     mobileMenu.classList.add("opacity-0", "pointer-events-none");
     document.body.classList.remove("overflow-hidden");
-    hamburgerIcon.classList.remove("hidden"); // Bring hamburger back
+    hamburgerIcon.classList.remove("hidden");
     closeIcon.classList.add("hidden");
-}
+  }
 
-  // Event Listeners
-if (menuBtn) menuBtn.addEventListener("click", openMenu);
-if (modalCloseBtn) modalCloseBtn.addEventListener("click", closeMenu);
+  menuBtn?.addEventListener("click", () => {
+    const isOpen = !mobileMenu.classList.contains("pointer-events-none");
+    isOpen ? closeMenu() : openMenu();
+  });
 
-  // Close menu automatically when any nav link inside the modal is clicked
-menuLinks.forEach(link => {
-    link.addEventListener("click", (e) =>{
-        closeMenu();
+  modalCloseBtn?.addEventListener("click", closeMenu);
 
-        const targetId = link.getAttribute("href");
-        if (targetId && targetId.startsWith("#")){
-            e.preventDefault();
-            setTimeout(() => {
-                const targetSection = document.querySelector(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({behavior : "smooth"})
-                }
-            }, 50)
-        }
-    })
-}
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      closeMenu();
 
-)}
-)
+      const targetId = link.getAttribute("href");
+      if (targetId?.startsWith("#")) {
+        event.preventDefault();
+        setTimeout(() => {
+          document.querySelector(targetId)?.scrollIntoView({ behavior: "smooth" });
+        }, 50);
+      }
+    });
+  });
+});
 
 
 // lenis smooth scroll

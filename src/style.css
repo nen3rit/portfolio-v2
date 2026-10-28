@@ -33,9 +33,9 @@
   box-sizing: border-box;
 }
 
-*:not(dialog) {
+/* *:not(dialog) {
   margin: 0;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -167,4 +167,10 @@ h1 {
   transform: translateY(0);
 }
 
+#close-icon {
+  display: none;
+}
 
+#close-icon:not(.hidden) {
+  display: inline-block;
+}
